@@ -1,0 +1,5 @@
+Who do we blame if something goes wrong?
+
+React agent solely relies more on the react prompt (from langchain hub) that you write/import from LangChain hub that you felt is very effective. The prompt is well thought and designed based on many research papers and chain of though papers. It means tool selection is done by llm based on your prompt. So, you are solely responsible if the llm chooses an incorrect tool because the prompt might be an issue.
+
+While in function calling agent, the entire tool interpretation is done by the llm without the need of any prompts based on its high interpretation skills. If a tool is chosen incorrectly by the llm, the llm vendor might take responsibility for that issue like shared responsibility unlike in react agents where you are solely responsible. We supply all our functions and code beforehand to the llm vendor that we want the llm to know so that the llm can be trained on the input for our functions and what each function does. LLM vendors like Open_ai/MistralAI/Bard all supports function calling/tool calling
